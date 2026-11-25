@@ -10,22 +10,22 @@ Source: [Skin Cancer: Malignant vs Benign (Kaggle)](https://www.kaggle.com/datas
 
 The notebook expects a single dataset/ directory containing class subfolders (it performs its own train/validation/test split):
 
-``markdown
+`markdown
 dataset/
   benign/
   malignant/
-`` 
+` 
 
 The Kaggle download contains 	rain/benign, 	rain/malignant, 	est/benign, and 	est/malignant. Merge all images into the flat structure above, for example:
 
-``bash
+`ash
 # after extracting the Kaggle archive into ./kaggle-data
 mkdir -p dataset/benign dataset/malignant
 cp kaggle-data/train/benign/* dataset/benign/
 cp kaggle-data/train/malignant/* dataset/malignant/
 cp kaggle-data/test/benign/* dataset/benign/
 cp kaggle-data/test/malignant/* dataset/malignant/
-`` 
+` 
 
 ## Files
 - DST CNN.ipynb - Jupyter notebook (reads from dataset/)
